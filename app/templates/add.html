@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block content %}
+<form action="" method="post">
+	<h1>New {{elem}}</h1>
+	{% if error %}
+		<p style="color: red">{{error}}
+		Please add this author <a href="{{ url_for('add_author')}}">here</a></p>
+	{% endif %}	
+	{% if elem=='book' %}
+		<p name="title">Title {{form.title}}</p>
+		<p name="authors">Author {{form.authors}}</p>
+	{% else %}
+		<p name="name">Name {{form.name}}</p>
+	{% endif %}		
+	<p><input type="submit" value="Add"></input></p>
+</form>
+{% endblock %}

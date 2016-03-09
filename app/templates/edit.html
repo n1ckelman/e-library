@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block content %}
+<form action="" method="post">
+	<h1>Edit {{elem}} named "{{name}}"</h1>
+	{% if elem=='book' %}
+		<p name="title">Title {{form.title}}</p>
+		<p name="authors">Author {{form.authors}}</p>
+	{% else %}
+		<p name="name">Name {{form.name}}</p>
+	{% endif %}		
+	<p><input type="submit" value="Edit"></input></p>
+</form>
+{% endblock %}

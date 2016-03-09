@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block content %}
+<form action="" method="post">
+<h1>Search</h1>
+<div>
+  <p>Search {{form.search}}</p>
+  <p>by: {{form.target}}</p>
+  <p><input type="submit" value="Search"></input></p>
+  <h3>Search results</h3>
+  {% if results %}
+  <ul>
+    {% for result in results %}
+      <li>{{result}}</li>
+    {% endfor %}
+  </ul>    
+  {% endif %}
+</div>
+</form>
+{% endblock %}
