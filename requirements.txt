@@ -30,7 +30,6 @@ et-xmlfile==1.0.1
 fastcache==1.0.2
 Flask==0.10.1
 Flask-Babel==0.8
-<<<<<<< HEAD
 Flask-GoogleLogin==0.3.1
 Flask-Login==0.2.11
 Flask-Mail==0.9.1
@@ -97,7 +96,6 @@ pyOpenSSL==0.15.1
 pyparsing==2.0.3
 pytest==2.8.5
 python-dateutil==2.4.2
-=======
 Flask-Login==0.1.3
 Flask-Mail==0.8.2
 Flask-OpenID==1.1.1
@@ -117,7 +115,6 @@ decorator==3.4.0
 flup==1.0.3.dev-20110405
 guess-language==0.2
 gunicorn==0.17.2
->>>>>>> db886d9d8073b67220f75612f40c40ff064c9c3b
 python-openid==2.2.5
 pytz==2013b0
 PyYAML==3.11
