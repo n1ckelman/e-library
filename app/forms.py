@@ -1,7 +1,6 @@
 from app import models
 from flask.ext.wtf import Form, SelectField, TextField, TextAreaField, SubmitField, validators, ValidationError, PasswordField
 from wtforms.validators import Required
-from config import SEARCH_CHOICES
 
 class BookForm(Form):
 	title = TextField('title', validators = [Required()])
