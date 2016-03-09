@@ -1,5 +1,6 @@
 from app import db
 from sqlalchemy import *
+from werkzeug import generate_password_hash, check_password_hash
 
 authors_books = db.Table('authors_books', 
     db.Column('book_id', Integer, ForeignKey('books.id')),
@@ -33,3 +34,25 @@ class Author(db.Model):
 
 	def __repr__(self):
 		return '%s' % (self.name)
+
+class User(db.Model):
+  __tablename__ = 'users'
+  id = db.Column(db.Integer, primary_key = True)
+  email = db.Column(db.String(120), unique=True)
+  password = db.Column(db.String(54))
+   
+  def __init__(self, email, password):
+    self.email = email.lower()
+    self.password = password
+
+  def is_authenticated(self):
+    return True
+
+  def is_active(self):
+    return True
+
+  def is_anonymous(self):
+    return False
+
+  def get_id(self):
+    return unicode(self.id)    
