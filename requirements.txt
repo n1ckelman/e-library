@@ -1,3 +1,4 @@
+abstract-rendering==0.5.1
 alabaster==0.7.7
 anaconda-client==1.2.2
 argcomplete==1.0.0
@@ -30,7 +31,6 @@ et-xmlfile==1.0.1
 fastcache==1.0.2
 Flask==0.10.1
 Flask-Babel==0.8
-<<<<<<< HEAD
 Flask-GoogleLogin==0.3.1
 Flask-Login==0.2.11
 Flask-Mail==0.9.1
@@ -49,6 +49,10 @@ gunicorn==19.4.5
 h5py==2.5.0
 idna==2.0
 ipaddress==1.0.14
+ipykernel==4.2.2
+ipython==4.0.3
+ipython-genutils==0.1.0
+ipywidgets==4.1.1
 itsdangerous==0.24
 jdcal==1.2
 jedi==0.9.0
@@ -61,6 +65,7 @@ jupyter-core==4.0.6
 llvmlite==0.8.0
 lxml==3.5.0
 MarkupSafe==0.23
+matplotlib==1.5.1
 mistune==0.7.1
 multipledispatch==0.4.8
 nbconvert==4.1.0
@@ -68,6 +73,7 @@ nbformat==4.0.1
 networkx==1.11
 nltk==3.1
 nose==1.3.7
+notebook==4.1.0
 numba==0.23.1
 numexpr==2.4.6
 numpy==1.10.4
@@ -83,6 +89,7 @@ pickleshare==0.5
 Pillow==3.1.0
 ply==3.8
 psutil==3.4.2
+psycopg2==2.6.1
 ptyprocess==0.5
 py==1.4.31
 pyasn1==0.1.9
@@ -97,27 +104,6 @@ pyOpenSSL==0.15.1
 pyparsing==2.0.3
 pytest==2.8.5
 python-dateutil==2.4.2
-=======
-Flask-Login==0.1.3
-Flask-Mail==0.8.2
-Flask-OpenID==1.1.1
-Flask-SQLAlchemy==0.16
-Flask-WTF==0.8.3
-Jinja2==2.6
-MySQL-python==1.2.4
-psycopg2==2.5
-SQLAlchemy==0.7.9
-Tempita==0.5.1
-WTForms==1.0.3
-Werkzeug==0.8.3
-Whoosh==2.4.1
-blinker==1.2
-coverage==3.6
-decorator==3.4.0
-flup==1.0.3.dev-20110405
-guess-language==0.2
-gunicorn==0.17.2
->>>>>>> db886d9d8073b67220f75612f40c40ff064c9c3b
 python-openid==2.2.5
 pytz==2013b0
 PyYAML==3.11
@@ -126,6 +112,9 @@ qtconsole==4.1.1
 redis==2.10.3
 requests==0.14.2
 rope==0.9.4
+scikit-image==0.11.3
+scikit-learn==0.17
+scipy==0.17.0
 simplegeneric==0.8.1
 singledispatch==3.4.0.3
 six==1.10.0
