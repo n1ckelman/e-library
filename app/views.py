@@ -130,8 +130,8 @@ def signup():
    
 @app.route('/login', methods=['GET', 'POST'])
 def login():
-	if g.user is not None and g.user.is_authenticated():
-	  return redirect(url_for('index'))
+#	if g.user is not None and g.user.is_authenticated():
+#	  return redirect(url_for('index'))
 	form = LoginForm()
 	if request.method == 'POST':
 		user = User.query.filter_by(email = form.email.data).first()
@@ -143,7 +143,7 @@ def login():
 				flash("Incorrect credintials. Try again")	
 				return render_template('login.html', form=form)
 
-		return redirect(url_for('index'))
+		return index()
 	return render_template('login.html', form=form)	      
 
 @app.route("/logout")
