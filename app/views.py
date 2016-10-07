@@ -101,14 +101,14 @@ def delete_book(id):
 
 @app.route('/search', methods=['GET', "POST"])
 def search():
-		form = SearchForm()
-		if request.method=='POST':
-			if form.target.data == 'authors':
-				results = Author.query.filter(Author.name.ilike('%' + form.search.data + '%')).all()
-			else:
-				results = Book.query.filter(Book.title.ilike('%' + form.search.data + '%')).all()
-			return render_template('search.html', results=results, form=form)
-		return render_template('search.html', form=form)	
+	form = SearchForm()
+	if request.method=='POST':
+		if form.target.data == 'authors':
+			results = Author.query.filter(Author.name.ilike('%' + form.search.data + '%')).all()
+		else:
+			results = Book.query.filter(Book.title.ilike('%' + form.search.data + '%')).all()
+		return render_template('search.html', results=results, form=form)
+	return render_template('search.html', form=form)	
 	
 
 @app.route('/signup', methods=['GET', 'POST'])
